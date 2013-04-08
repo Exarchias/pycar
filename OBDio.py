@@ -3,8 +3,8 @@ import serial
 
 class OBDio:
     stopread = 0
-    def __init__(portname,baud,to=1):
-        self.ser = serial.Serial(port=portname,baudrate=baud,timeout=to);
+    def __init__(portdev,baud,to=1):
+        self.ser = serial.Serial(port=portdev,baudrate=baud,timeout=to);
         
     
     def TestSerialConn(self,):
